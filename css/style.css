@@ -11,15 +11,124 @@
   transition: width none;
 }
 html{
+  font-size: 62.5%;
   overflow-x: hidden;
   scroll-padding-top: 5rem;
   scroll-behavior: smooth;
 }
-/* logo style */
-.logo{
-
+html::-webkit-scrollbar{
+  width:1rem;
 }
-/* loader style */
+
+html::-webkit-scrollbar-track{
+  background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background:var(--black);
+}
+section{
+  padding:5rem 9%;
+}
+body{
+  height: 1500px;
+}
+/* =>=>=>=>=>=>=>=>=>=>=>=>
+      header-1 style
+=>=>=>=>=>=>=>=>=>=>=>=>=> */
+
+.header-1{
+  background-color: #fff;
+  padding: 1.5rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  font-style: 2.5rem;
+  font-weight: bolder;
+  color: #444;
+}
+.logo i{
+  color: #27ae60;
+}
+.search-form{
+  width: 50rem;
+  height: 5rem;
+  border: .1rem solid rgba(0,0,0,.1);
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: .5rem;
+}
+.search-form input{
+  font-size: 1.6rem;
+  padding: 0 1.2rem;
+  height: 100%;
+  width: 100%;
+  text-transform: none;
+  color: #444;
+  border: none;
+}
+.search-form label{
+  font-size: 2.5rem;
+  padding-right: 1.5rem;
+  color: #444;
+  cursor: pointer;
+}
+
+.search-form label:hover{
+  color: #27ae60;
+}
+
+.header-1 .icons div,a{
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+  color: #444;
+  cursor: pointer;
+}
+#header .header-1 .icons div:hover,
+#header .header-1 .icons a:hover{
+    color: #27ae60;
+}
+
+#search-btn{
+  display: none;
+}
+
+/* =>>=>>=>> =>>=>>=>> 
+      header 2 
+ =>>=>>=>> =>>=>>=>>*/
+.header-2{
+  background-color: #27ae60;
+}
+.navbar{
+  text-align: center;
+}
+.navbar a{
+  color: #fff;
+  display: inline-block;
+  padding: 1.2rem;
+  font-size: 1.7rem;
+}
+.navbar a:hover{
+  background-color: #219150;
+}
+#header .header-2.active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+
+
+
+/* =>=>=>=>=>=>=>=>=>=>=>=>
+      loader style
+=>=>=>=>=>=>=>=>=>=>=>=>=> */
 .loader-container {
     position: fixed;
     top: 0;
